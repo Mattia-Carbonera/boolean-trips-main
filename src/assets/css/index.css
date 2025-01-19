@@ -1,0 +1,288 @@
+h1 {
+  color: red;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-contacts {
+  height: 100% !important;
+}
+
+.modal-title {
+  font-size: 1.5rem !important;
+}
+
+.contact-img {
+  object-fit: cover !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.container-img-contact {
+  height: 100% !important;
+  aspect-ratio: 1;
+}
+
+main {
+  height: 100vh;
+}
+.trip-cover-img {
+  object-fit: contain;
+}
+
+.container-detail-contact-img {
+  height: 150px;
+  aspect-ratio: 1;
+}
+
+.container-trip-cover-img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.container-trip-cover-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-trip-cover-img > h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  margin-bottom: -50%;
+  transform: translate(-50%);
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+  font-size: 2.5rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.input-group {
+  max-width: 400px;
+}
+
+.card-trip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-trip-container span {
+  color: black;
+}
+
+.date-container {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-trip {
+  position: relative;
+  height: 200px;
+  width: 350px;
+  margin: 2.5rem auto 1.5rem;
+  border-radius: 10px;
+}
+
+.link-card-trip img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.link-card-trip {
+  text-decoration: none;
+  color: white;
+}
+
+.trip-title {
+  background-color: white;
+}
+
+.trip-title h2 {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3rem;
+  text-shadow: 5px 5px 2px black;
+  font-weight: bold;
+}
+
+header {
+  background-color: #eee;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.btn-backArrow {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+
+.container-icon {
+  border: 1px solid #0a58ca;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.container-icon > i {
+  font-size: 1.5rem;
+  color: #0a58ca;
+}
+
+.btn-info {
+  border-color: #579aff !important;
+  background-color: #579aff !important;
+  color: white !important;
+}
+
+/* ? NUOVO CSS */
+main {
+  position: relative;
+}
+
+/* USER MENU */
+.user-menu {
+  position: absolute;
+  top: -24px;
+  right: 1rem;
+
+  padding: 1.5rem;
+
+  width: 15rem;
+  background-color: white;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
+
+.user-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.user-welcome {
+  text-align: end;
+}
+
+.link-user-menu {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN ADD TRIP PAGE */
+.add-trip-main-container h1 {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+/* form new trip */
+.form-add-trip {
+  text-align: center;
+}
+
+.trip-details {
+  margin: 3rem 0;
+}
+
+.trip-details label {
+  margin-right: 1rem;
+}
+
+/* trip date input */
+.trip-date input {
+  margin: 0 0.5rem;
+}
+
+/* trip select input */
+.select-contacts-add-trip {
+  height: 250px;
+  width: 12rem;
+}
+
+.select-add-button {
+  background-color: lightgray;
+  height: 2rem;
+  width: 12rem;
+  margin: 0 auto;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn-add-contacts {
+  max-width: 30%;
+}
+
+/* trip select output */
+.added-contacts {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.trip-added-detail {
+  margin: 1rem 0;
+}
+
+.trip-added-detail span {
+  margin: 0 1rem;
+}
+
+.added-contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* * CONFIRM TRIP ADDED CONTAINER */
+.trip-added-container {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.trip-added-container i {
+  font-size: 5rem;
+  color: green;
+}
+
+.trip-added-container h2 {
+  font-size: 2rem;
+  color: green;
+  margin-top: 2rem;
+}
+
+.check-container {
+  padding: 3rem;
+  border: 7px solid green;
+  border-radius: 50%;
+}
