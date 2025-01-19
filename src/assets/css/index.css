@@ -286,3 +286,14 @@ main {
   border: 7px solid green;
   border-radius: 50%;
 }
+
+/* ? ADDCONTACT.JSX */
+.input-add-contact-container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 300px;
+
+  margin: 2rem auto;
+  text-align: center;
+}

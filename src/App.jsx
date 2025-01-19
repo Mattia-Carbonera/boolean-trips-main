@@ -14,8 +14,7 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route index Component={HomePage}></Route>
             <Route path="/new-trip" Component={AddTrip}></Route>
-            <Route path="/new-contact" component={AddContact}></Route>
-            {/* <Route path="/trips" Component={HomePage}></Route> */}
+            <Route path="/new-contact" Component={AddContact}></Route>
             <Route path="/details/:id" Component={DetailsTripPage}></Route>
           </Route>
         </Routes>
