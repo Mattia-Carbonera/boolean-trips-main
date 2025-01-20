@@ -5,8 +5,16 @@ import ContactsCard from "../components/ContactsCard";
 import { useState } from "react";
 import Header from "../components/Header";
 import DeleteItem from "../components/DeleteItem";
+import { Link } from "react-router-dom";
 
 export default function DetailsTripPage() {
+  const [menuDisplayed, setMenuDisplayed] = useState("d-none");
+  const handleMenuDisplayed = () => {
+    menuDisplayed === "d-none"
+      ? setMenuDisplayed("")
+      : setMenuDisplayed("d-none");
+  };
+
   const [inputValue, setInputValue] = useState();
   const { id } = useParams();
 
@@ -45,7 +53,7 @@ export default function DetailsTripPage() {
 
   return (
     <>
-      <Header page="trip" />
+      <Header page="trip" isDisplayedHandler={handleMenuDisplayed} />
       <main className="mb-10 h-100">
         <div className="container-trip-cover-img">
           <h1>{trip.destinazione.toUpperCase()}</h1>
@@ -83,6 +91,29 @@ export default function DetailsTripPage() {
           </div>
         </div>
         <DeleteItem array={trips} id={id} navigateTo={"/"} />
+
+        <div className={`user-menu ${menuDisplayed}`}>
+          <div className="user-welcome">
+            <span>
+              <strong>benvenuto Marco!</strong>
+            </span>
+          </div>
+          <ul>
+            <li>Il tuo profilo</li>
+            <hr />
+            <Link className="link-user-menu" to={"/new-trip"}>
+              <li>Aggiungi viaggio</li>
+            </Link>
+            <hr />
+            <Link className="link-user-menu" to={"/new-contact"}>
+              <li>Aggiungi contatto</li>
+            </Link>
+            <hr />
+            <Link className="link-user-menu" to={"/contacts"}>
+              <li>Contatti</li>
+            </Link>
+          </ul>
+        </div>
       </main>
     </>
   );
