@@ -10,7 +10,7 @@ export default function Contacts() {
       <div className="container contacts-container">
         {contacts.map((contact) => {
           return (
-            <div className="contact-card-container">
+            <div key={contact.id} className="contact-card-container">
               <ContactsCard contact={contact} />
             </div>
           );
