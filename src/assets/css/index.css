@@ -322,3 +322,29 @@ main {
 .contact-card-container .col-12 {
   width: 100%;
 }
+
+/* * DELETE ITEM CONFIRM LAYOVER */
+
+.layover-main-container {
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .layover-delete-item {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+} */
+
+.layover-delete-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

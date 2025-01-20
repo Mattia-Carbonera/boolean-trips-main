@@ -4,6 +4,7 @@ import { trips } from "../data/db";
 import ContactsCard from "../components/ContactsCard";
 import { useState } from "react";
 import Header from "../components/Header";
+import DeleteItem from "../components/DeleteItem";
 
 export default function DetailsTripPage() {
   const [inputValue, setInputValue] = useState();
@@ -81,6 +82,7 @@ export default function DetailsTripPage() {
             })}
           </div>
         </div>
+        <DeleteItem array={trips} id={id} />
       </main>
     </>
   );

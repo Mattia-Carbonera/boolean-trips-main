@@ -1,3 +1,6 @@
+import DeleteItem from "./DeleteItem";
+import { contacts } from "../data/db";
+
 export default function ContactModal({ contact, img }) {
   return (
     <>
@@ -50,6 +53,7 @@ export default function ContactModal({ contact, img }) {
                 Chat
               </button>
             </div>
+            <DeleteItem array={contacts} id={contact.id} />
           </div>
         </div>
       </div>
