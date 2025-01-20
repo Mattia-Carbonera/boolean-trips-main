@@ -167,6 +167,7 @@ export default function AddTrip() {
                   Seleziona un'immagine
                 </label>
                 <select onChange={handleSelectImgForm} name="img" id="">
+                  <option value="">Seleziona una foto</option>
                   <option value="londra.jpg">londra</option>
                   <option value="roma.jpg">roma</option>
                   <option value="egitto.jpg">egitto</option>
@@ -200,7 +201,7 @@ export default function AddTrip() {
                     ))}
                   </select>
                   <div
-                    className={`${isDisplayed} select-add-button`}
+                    className={`${isDisplayed} select-add-button mt-2`}
                     onClick={handleAddContactsButton}
                   >
                     <span>

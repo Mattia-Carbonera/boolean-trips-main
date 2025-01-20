@@ -70,19 +70,19 @@ export default function AddContact() {
             action=""
           >
             <div className="input-nome input-add-contact-container">
-              <label htmlFor="">Nome</label>
+              <label htmlFor="nome">Nome</label>
               <input onChange={handleInputContact} type="text" name="nome" />
             </div>
             <div className="input-cognome input-add-contact-container">
-              <label htmlFor="">Cognome</label>
+              <label htmlFor="cognome">Cognome</label>
               <input onChange={handleInputContact} type="text" name="cognome" />
             </div>
             <div className="input-email input-add-contact-container">
-              <label htmlFor="">Email</label>
+              <label htmlFor="email">Email</label>
               <input onChange={handleInputContact} type="email" name="email" />
             </div>
             <div className="input-cod-fiscale input-add-contact-container">
-              <label htmlFor="">Codice fiscale</label>
+              <label htmlFor="cod_fiscale">Codice fiscale</label>
               <input
                 onChange={handleInputContact}
                 type="text"
@@ -90,17 +90,28 @@ export default function AddContact() {
               />
             </div>
             <div className="input-tel input-add-contact-container">
-              <label htmlFor="">Tel.</label>
+              <label htmlFor="numero_di_telefono">Tel.</label>
               <input
                 onChange={handleInputContact}
                 type="text"
                 name="numero_di_telefono"
               />
             </div>
-            {/* <div className="input-img input-add-contact-container">
+            <div className="input-img input-add-contact-container">
               <label htmlFor="">Immagine</label>
-              <input onChange={handleInputContact} type="text" name="img" />
-            </div> */}
+              <select onChange={handleInputContact} name="img" id="">
+                <option value="">Seleziona l'immagine</option>
+                <option value="1.png">immagine 1</option>
+                <option value="2.png">immagine 2</option>
+                <option value="3.png">immagine 3</option>
+                <option value="4.png">immagine 4</option>
+                <option value="5.png">immagine 5</option>
+                <option value="6.png">immagine 6</option>
+                <option value="7.png">immagine 7</option>
+                <option value="8.png">immagine 8</option>
+                <option value="9.png">immagine 9</option>
+              </select>
+            </div>
             <div className="btn-container text-center">
               <button
                 onClick={handleAddContactButton}

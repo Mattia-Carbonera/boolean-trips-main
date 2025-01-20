@@ -262,6 +262,10 @@ main {
 
 .select-add-button {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c6dfd;
 }
 
 /* * CONFIRM TRIP ADDED CONTAINER */
@@ -302,6 +306,10 @@ main {
   text-align: center;
 }
 
+.input-name-contact-page {
+  margin: 1rem auto;
+}
+
 /* confirm conctat added */
 .trip-added-container h2 {
   margin-bottom: 2rem;
@@ -309,4 +317,8 @@ main {
 
 .contact-card-container {
   margin: 1rem 0;
+}
+
+.contact-card-container .col-12 {
+  width: 100%;
 }
