@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function DeleteItem({ array, id }) {
+export default function DeleteItem({ array, id, navigateTo }) {
   const [displayedMainPage, setDisplayedMainPage] = useState("");
   const [displayedModal, setDisplayedModal] = useState("d-none");
   const openLayover = () => {
@@ -46,7 +46,7 @@ export default function DeleteItem({ array, id }) {
               </button>
             </div>
             <div className="layover-cancel-delete-item m-3">
-              <Link to="/">
+              <Link to={navigateTo}>
                 <button
                   data-bs-dismiss="modal"
                   aria-label="Close"

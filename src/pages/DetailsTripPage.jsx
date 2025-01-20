@@ -82,7 +82,7 @@ export default function DetailsTripPage() {
             })}
           </div>
         </div>
-        <DeleteItem array={trips} id={id} />
+        <DeleteItem array={trips} id={id} navigateTo={"/"} />
       </main>
     </>
   );

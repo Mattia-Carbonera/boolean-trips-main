@@ -53,7 +53,11 @@ export default function ContactModal({ contact, img }) {
                 Chat
               </button>
             </div>
-            <DeleteItem array={contacts} id={contact.id} />
+            <DeleteItem
+              array={contacts}
+              id={contact.id}
+              navigateTo={"/contacts"}
+            />
           </div>
         </div>
       </div>

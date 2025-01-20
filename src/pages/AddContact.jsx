@@ -71,19 +71,35 @@ export default function AddContact() {
           >
             <div className="input-nome input-add-contact-container">
               <label htmlFor="nome">Nome</label>
-              <input onChange={handleInputContact} type="text" name="nome" />
+              <input
+                required
+                onChange={handleInputContact}
+                type="text"
+                name="nome"
+              />
             </div>
             <div className="input-cognome input-add-contact-container">
               <label htmlFor="cognome">Cognome</label>
-              <input onChange={handleInputContact} type="text" name="cognome" />
+              <input
+                required
+                onChange={handleInputContact}
+                type="text"
+                name="cognome"
+              />
             </div>
             <div className="input-email input-add-contact-container">
               <label htmlFor="email">Email</label>
-              <input onChange={handleInputContact} type="email" name="email" />
+              <input
+                required
+                onChange={handleInputContact}
+                type="email"
+                name="email"
+              />
             </div>
             <div className="input-cod-fiscale input-add-contact-container">
               <label htmlFor="cod_fiscale">Codice fiscale</label>
               <input
+                required
                 onChange={handleInputContact}
                 type="text"
                 name="cod_fiscale"
@@ -92,6 +108,7 @@ export default function AddContact() {
             <div className="input-tel input-add-contact-container">
               <label htmlFor="numero_di_telefono">Tel.</label>
               <input
+                required
                 onChange={handleInputContact}
                 type="text"
                 name="numero_di_telefono"
