@@ -38,6 +38,10 @@ export default function HomePage() {
             <Link className="link-user-menu" to={"/new-contact"}>
               <li>Aggiungi contatto</li>
             </Link>
+            <hr />
+            <Link className="link-user-menu">
+              <li>Contatti</li>
+            </Link>
           </ul>
         </div>
       </main>

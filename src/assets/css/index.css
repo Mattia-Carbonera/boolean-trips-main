@@ -172,7 +172,7 @@ main {
 .user-menu {
   position: absolute;
   top: -24px;
-  right: 1rem;
+  right: 0;
 
   padding: 1.5rem;
 
@@ -260,6 +260,10 @@ main {
   padding: 0;
 }
 
+.select-add-button {
+  cursor: pointer;
+}
+
 /* * CONFIRM TRIP ADDED CONTAINER */
 .trip-added-container {
   width: 100%;
@@ -296,4 +300,9 @@ main {
 
   margin: 2rem auto;
   text-align: center;
+}
+
+/* confirm conctat added */
+.trip-added-container h2 {
+  margin-bottom: 2rem;
 }

@@ -23,7 +23,7 @@ export default function AddContact() {
     email: "",
     cod_fiscale: "",
     numero_di_telefono: "",
-    img: "defaultUserImg.jpg",
+    img: "/defaultUserImg.jpg",
   });
   // * HANDLER INPUT
   const handleInputContact = (e) => {
@@ -58,7 +58,7 @@ export default function AddContact() {
 
   return (
     <>
-      <Header />
+      <Header page="trip" />
       <main>
         <h1 className={`${handlePageDisplayed} text-center my-4`}>
           Nuovo contatto
@@ -120,7 +120,7 @@ export default function AddContact() {
             </div>
             <h2>Viaggio aggiunto</h2>
             <ContactsCard contact={newContact} />
-            <div className="btn-container">
+            <div className="btn-container mt-3">
               <Link to={"/"}>
                 <button className="btn btn-primary mt-3">
                   Torna alla Home
