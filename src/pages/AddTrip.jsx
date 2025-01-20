@@ -180,10 +180,10 @@ export default function AddTrip() {
               {/* new contact */}
               <div className="add-contacts">
                 <div
-                  className={`${isNotDisplayed} btn btn-secondary d-block m-auto mb-3 btn-add-contacts`}
+                  className={`${isNotDisplayed} btn btn-primary d-block m-auto mb-3 btn-add-contacts`}
                   onClick={hamdleButtonAddContacts}
                 >
-                  aggiungi viaggiatori
+                  Aggiungi viaggiatori
                 </div>
                 <div className={`${isDisplayed} select-container`}>
                   <select

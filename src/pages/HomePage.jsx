@@ -39,7 +39,7 @@ export default function HomePage() {
               <li>Aggiungi contatto</li>
             </Link>
             <hr />
-            <Link className="link-user-menu">
+            <Link className="link-user-menu" to={"/contacts"}>
               <li>Contatti</li>
             </Link>
           </ul>

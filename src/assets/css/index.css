@@ -306,3 +306,7 @@ main {
 .trip-added-container h2 {
   margin-bottom: 2rem;
 }
+
+.contact-card-container {
+  margin: 1rem 0;
+}
